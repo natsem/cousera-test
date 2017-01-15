@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Media Queries</title>
+<title>Module 1</title>
 <style>
 /********** Base styles **********/
 h1 {
@@ -11,19 +11,29 @@ h1 {
 p {
   border: 1px solid black;
   margin-bottom: 15px;
+  float: left;
+  margin-right 10px;
 }
 #p1 {
-  background-color: #A52A2A;
+  background-color: #fff952;
   width: 300px;
   height: 300px;
 }
 #p2 {
-  background-color: #DEB887;
+  background-color: #ffbd4a;
   width: 50px;
   height: 50px;
 }
-/********** Large devices only **********/
-@media (min-width: 1200px) {
+  
+  #p3 {
+  background-color: #99E265;
+  width: 40px;
+  height: 40px;
+}
+  
+  
+  
+  @media (max-width: 767px) {
   #p1 {
     width: 80%;
   }
@@ -31,9 +41,30 @@ p {
     width: 150px;
     height: 150px;
   }
+    
+    
+}
+  
+/********** Large devices only **********/
+@media (min-width: 992px) {
+  
+ 
+  #p1 {
+    width: 33,3%;
+  }
+  #p2 {
+    width:33,3%;
+   
+  }
+  
+  
+    #p3 {
+    width:33,3%;
+   
+  }
 }
 /********** Medium devices only **********/
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width:  768px) and (max-width:  991px) {
   #p1 {
     width: 50%;
   }
@@ -42,16 +73,23 @@ p {
     height: 100px;
   }
   body {
-    background-color: blue;
+    background-color: #ffffff;
   }
 }
 </style>
 </head>
 <body>
-<h1>Media Queries</h1>
+<h1>Module 2</h1>
 
-<p id="p1"></p>
-<p id="p2"></p>
+<p id="p1">
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </p>
+<p id="p2">
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </p>
+  <p id="p3">
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </p>
 
 </body>
 </html>
